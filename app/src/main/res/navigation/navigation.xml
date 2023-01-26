@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/llistatMobles">
+    <fragment
+        android:id="@+id/llistatMobles"
+        android:name="com.example.examenuf2.view.LlistatMobles"
+        android:label="LlistatMobles" >
+        <action
+            android:id="@+id/action_llistatMobles_to_insertarMobles2"
+            app:destination="@id/insertarMobles2" />
+        <action
+            android:id="@+id/action_llistatMobles_to_editarMobles2"
+            app:destination="@id/editarMobles2" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarMobles2"
+        android:name="com.example.examenuf2.view.EditarMobles"
+        android:label="EditarMobles" />
+    <fragment
+        android:id="@+id/insertarMobles2"
+        android:name="com.example.examenuf2.view.InsertarMobles"
+        android:label="InsertarMobles" >
+        <action
+            android:id="@+id/action_insertarMobles2_to_llistatMobles"
+            app:destination="@id/llistatMobles" />
+    </fragment>
+</navigation>
